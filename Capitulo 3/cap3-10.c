@@ -18,7 +18,7 @@ int main(){
 		
 	}
 	
-	printf("\n\nEl mayor número ingresado fue %d y se ingreso en la posicion %d ", mayor, posicion);
+	printf("\n\nEl mayor número ingresado fue %d y se ingresó en la posicion %d ", mayor, posicion);
 	
 	
 }
