@@ -13,7 +13,7 @@ int main(){
 		for(NUM = 2; NUM < MAX; NUM++){
 			PRIMO = 1;
 			
-			for(DIV=2; DIV < NUM-1; DIV++){
+			for(DIV=2; DIV <= sqrt(NUM) && PRIMO; DIV++){
 				if ( !(NUM%DIV)  ){
 					PRIMO=0;
 				};
