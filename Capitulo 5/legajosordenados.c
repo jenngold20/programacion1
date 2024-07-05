@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define NUM 20
+#define NUM 12
 
 void MIRAR  (int [], char [], float [], int );
 void CARGAR (int [], char [], float [], int );
@@ -77,7 +77,10 @@ void ORDENAR  (int L[], char S[], float P[], int  N){
 	for(I=0; I<N-1; I ++){
 		
 		for(J=0; J<N-I-1; J++){
-			if (P[J] < P[J+1]){
+			if (S[J] > S[J+1] || 
+			S[J] == S[J+1]  && L[J] > L[J+1]) 
+			
+			{
 				
 				/*SWAPPING*/
 				AUXP =P[J];
